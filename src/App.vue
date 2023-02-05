@@ -21,6 +21,11 @@ export default{
 </template>
 
 <style lang="scss">
-  @use "./styles/main.scss"
+
+  @use "./styles/partials/mixins.scss" as *;
+  .container{
+    @include container;
+  }
+
 </style>
   

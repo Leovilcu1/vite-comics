@@ -28,12 +28,11 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/mixins.scss" as*;
     .footerbottom{
         background-color: #303030;
+
         .container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             padding: 20px 0;
             button{
                 border:2px solid #0282f9 ;
@@ -51,9 +50,9 @@ export default{
             }
             
             li{
-                list-style: none;
+                @include listyle ( 0 5px);
                 display: inline-block;
-                padding: 0 5px;
+
             }
         }
     }

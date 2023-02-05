@@ -40,9 +40,8 @@ main{
     background-color: #0282f9;
     .container{
         padding: 30px 0;
-        display: flex;
-        justify-content: space-between;
-        div{
+
+        >*{
             display: flex;
             align-items: center;
             span{

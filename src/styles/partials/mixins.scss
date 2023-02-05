@@ -1,0 +1,16 @@
+@mixin container () {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+};
+@mixin listyle ($padding){
+    list-style: none;
+    padding: $padding;
+}
+@mixin astyle ($color){
+    text-decoration: none;
+    color:$color;
+}

@@ -1,6 +1,69 @@
 <script>
 export default{
-    name:"AppHeader"
+    name:"AppHeader",
+    data (){
+        return{
+            links:[
+                {
+                    nome:"HARACTERS",
+                    link:"#",
+                    active: false
+                },
+                {
+                    nome:"COMICS",
+                    link:"#",
+                    active: true
+                },
+                {
+                    nome:"MOVIES",
+                    link:"#",
+                    active: false
+                },
+                {
+                    nome:"TV",
+                    link:"#",
+                    active: false
+                },
+                {
+                    nome:"GAMES",
+                    link:"#",
+                    active: false
+                },
+                {
+                    nome:"COLLECTIBLES",
+                    link:"#",
+                    active: false
+                },
+                {
+                    nome:"VIDEOS",
+                    link:"#",
+                    active: false
+                },
+                {
+                    nome:"FANS",
+                    link:"#",
+                    active: false
+                },
+                {
+                    nome:"NEWS",
+                    link:"#",
+                    active: false
+                },
+                {
+                    nome:"SHOP",
+                    link:"#",
+                    active: false
+                },
+            ]
+        }
+    },
+    methods:{
+        addClass (link){
+            return link.classList.add("active");
+
+        }
+    }
+    
 }
 </script>
 
@@ -14,37 +77,10 @@ export default{
 
             <div >
                 <ul>
-                    <li>
-                        <a href="#">CHARACTERS</a>
-                    </li>
-
-                    <li>
-                        <a href="#">COMICS</a>
-                    </li>
-
-                    <li>
-                        <a href="#">MOOVIES</a>
-                    </li>
-                    <li>
-                        <a href="#">TV</a>
-                    </li>
-                    <li>
-                        <a class="active" href="#">GAMES</a>
-                    </li>
-                    <li>
-                        <a href="#">COLLECTIBLES</a>
-                    </li>
-                    <li>
-                        <a href="#">VIDEOS</a>
-                    </li>
-                    <li>
-                        <a href="#">FANS</a>
-                    </li>
-                    <li>
-                        <a href="#">NEWS</a>
-                    </li>
-                    <li>
-                        <a href="#">SHOP</a>
+                    <li v-for="link in links" >
+                        <a :href="link.link" :class="{
+                            active: link.active
+                        }">{{link.nome}}</a>
                     </li>
                 </ul>
             </div>
@@ -53,23 +89,21 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/mixins.scss" as *;
     .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        
         img{    
-            padding: 20px 0; 
+            padding: 20px 0;  
         }
         ul{
         display: flex;
         list-style: none;
         flex-wrap: wrap;
         li{
-            padding: 5px;
+            @include listyle(5px);
              
             a{
-                text-decoration: none;
-                color: black;
+                @include astyle(black);
                 font-weight: bold;
                 &.active{
                 border-bottom: 4px solid  #0282f9;
