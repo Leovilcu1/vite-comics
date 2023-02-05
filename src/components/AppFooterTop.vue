@@ -38,23 +38,21 @@ export default{
 <style lang="scss" scoped>
 main{
     background-color: #0282f9;
+
     .container{
         padding: 30px 0;
-
-        >*{
+        color: rgb(255, 255, 255); 
+        > *{
+            width: 20%;
             display: flex;
             align-items: center;
-            span{
-                color: white;
-                padding-left: 0.5rem;
-                font-size: 0.7rem;
+            >img {
+                width: 30%;
+                padding-right: 10px;
             }
         }
-        img{
-            width: 20%;
-        };
         
-        }
+     }
 
 }
     

@@ -23,9 +23,11 @@ export default{
 <style lang="scss">
 
   @use "./styles/partials/mixins.scss" as *;
+  @use "./styles/partials/reset.scss" as *;
   .container{
     @include container;
   }
+
 
 </style>
   

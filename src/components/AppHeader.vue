@@ -57,13 +57,7 @@ export default{
             ]
         }
     },
-    methods:{
-        addClass (link){
-            return link.classList.add("active");
-
-        }
-    }
-    
+   
 }
 </script>
 

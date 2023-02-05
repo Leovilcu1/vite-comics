@@ -2,14 +2,15 @@
 import AppFooterTop from "./AppFooterTop.vue";
 import AppFooterMidle from './AppFooterMidle.vue';
 import AppFooterBottom from './AppFooterBottom.vue';
+import Jumbotron from "./jumbotron.vue";
 
 export default{
     name: "AppFooter",
     components:{
-        AppFooterTop,
-        AppFooterMidle,
-        AppFooterBottom
-    }
+    AppFooterTop,
+    AppFooterMidle,
+    AppFooterBottom,
+}
 }
 </script>
 

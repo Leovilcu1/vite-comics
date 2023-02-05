@@ -160,6 +160,7 @@ export default{
                     </ul>
                 </div>
             </div>
+            <img src="../assets/img/dc-logo-bg.png" alt="">
 
             
         </div>
