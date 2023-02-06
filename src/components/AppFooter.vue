@@ -1,4 +1,5 @@
 <script>
+
 import AppFooterTop from "./AppFooterTop.vue";
 import AppFooterMidle from './AppFooterMidle.vue';
 import AppFooterBottom from './AppFooterBottom.vue';

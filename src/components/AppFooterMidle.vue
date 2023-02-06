@@ -1,5 +1,5 @@
 <script>
-// import { url } from 'inspector';
+
 
 export default{
     name: "AppFooterMidle",

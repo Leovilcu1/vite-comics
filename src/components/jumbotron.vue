@@ -2,8 +2,6 @@
 export default{
     name:"jumbotron",
 }
-
-
 </script>
 
 <template> 
